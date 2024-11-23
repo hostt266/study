@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+            .contact-form {
+                color:blue;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+            }
+            h1 {
+                text-align: center;
+                color: #1909cc;
+            }
+            label {
+                color: #333;
+                margin-bottom: 5px;
+                display: block;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            input[type="submit"] {
+                background-color: #1909cc;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #1111c9;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="contact-form">
+            <h1>Registre</h1>
+            <form method=post action="mailto:webmaster@commentcamarche.net"> 
+                <label for="nom">Nom :</label>
+                <input type="text" placeholder="Saisir votre nom" id="nom" name="nom" required>
+                
+                <label for="nom">prenom :</label>
+                <input type="text"placeholder="Saisir votre prenom" id="prenom" name="nom" required>
+                
+                <label for="nom">Date de naissance:</label>
+                <input type="date" id="date" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email"placeholder="Saisir votre mail" id="email" name="email" required>
+
+                <label for="tel">Téléphone :</label>
+                <input type="tel" placeholder="Saisir votre tele" id="tel" name="tel"><br><br>
+            
+                <center>
+                    sex :
+                    <select name="sex" size="1" tabindex="2" onfocus="this.style.color='red'">
+                        <option value="azeaze">Femme</option>
+                        <option value="azeaze">Homme</option>
+                    </select>
+                </center>
+                <br><br>
+                <center>
+                    Pays :
+                    <select name="pays" size="1" tabindex="2" onfocus="this.style.color='red'">
+                        <option value="">tunisie</option>
+                        <option value="">algerie</option>
+                        <option value="">morocco</option>
+                        <option value="">egypte</option>
+                        <option value="">france</option>
+                    </select>
+                </center>
+                <br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </body>
+</html>

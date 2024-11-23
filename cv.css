@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+.sidebar h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+}
+.sidebar p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+.sidebar .contact-info {
+    margin-top: 20px;
+}
+.sidebar .contact-info p {
+    font-size: 0.9em;
+    color: #e6e9f0;
+}
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.job-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.job-duration {
+    font-size: 0.9em;
+    color: #777;
+}
+.job-description {
+    margin-top: 5px;
+    line-height: 1.6;
+}
+.skills, .languages, .interests {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills li, .languages li, .interests li {
+    width: 50%;
+    list-style: none;
+    padding: 5px 0;
+}

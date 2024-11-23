@@ -1,0 +1,55 @@
+.h1{
+    color: rgb(112, 230, 226);
+}
+.decor{
+    text-decoration: underline;
+    color: rgb(26, 255, 0);
+}
+.taille{
+    font-size: 20px;
+    font-family: cursive;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    margin: 0 15px;
+    color:rgb(245, 201, 5);
+    text-decoration:none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;    
+    font-size: 18px;   
+}
+button:hover {
+    background-color:rgb(245, 201, 5); 
+    color:white; 
+}
+.mod{
+    font-size: 37px;
+    background: linear-gradient(to left,
+    #ee82ee, indigo,
+    blue, #0acff2, yellow,
+    orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.at-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .at-item {
+            color:white; font-weight:bold; font-size:3em;
+            animation-name: focus-in-expand-top;
+            animation-duration: 2.2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+            animation-fill-mode: none;
+        }
+        @keyframes focus-in-expand-top {
+            0% {
+                letter-spacing:-.5em;
+                transform:translateY(-300px);
+                filter:blur(12px);
+                opacity:0;
+            }
+            0% {
+                transform:translateY(0);
+                filter:blur(0);
+                opacity:1;
+            }
+        }
+        body{
+            background-color: #8a8a8a;
+        }
+        header {
+            background: linear-gradient(to right ,black ,rgb(5, 227, 61),rgb(245, 201, 5)); 
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration:none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;  
+        }
+        nav a:hover {
+            background-color:white; 
+            color: black; 
+        }
+        #pp{
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            margin-right: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            color:rgb(245, 201, 5);
+            font-size: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color:rgb(245, 201, 5);
+            color: white;
+        }
+        button{
+            margin: 0 15px;
+            color:rgb(245, 201, 5);
+            text-decoration:none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s;    
+            font-size: 18px;   
+        }
+        button:hover {
+            background-color:rgb(245, 201, 5); 
+            color:white; 
+        }
+        .anm{
+        border: 3px solid  blue; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 15px rgb(245, 201, 5);
+        overflow: hidden;
+        transition: transform 0.3s; 
+        }
+
+        .anm:hover {
+            transform: scale(1.05);
+        }
+
+        .anm img {
+            display: block; 
+            width: 100%; 
+            height: auto; 
+        }
+        footer{
+            text-align: center;
+            color:white;
+            background: linear-gradient(to right ,black ,rgb(240, 156, 1),rgb(202, 194, 194)); 
+
+        }
+
+        input{
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #636363;
+            border-radius: 20px;
+        }
+        select{
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #0e0b0b;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p align="left">&nbsp;&nbsp; ➔ bienvenue sur notre site LFR</p>
+        <div class='at-container'>
+            <h1 class='at-item' align="center" >Lycee Technique-Rades</h1></div>
+        <br>
+        <br>
+        <nav>
+            <a href="#pr">Presenter</a>
+            <a href="#aa">Niveaux  </a>
+            <a href="#mm">Matières  </a>
+            <a href="#entrer">Baccalauréat  </a>
+            <a href="#in">Plus d'infos</a>
+        </nav>
+        <br>
+    </header>
+
+    <section id="pr">
+        <h2>Presentation</h2>
+        <div style="display: flex; align-items: center;">
+            <p>
+                Notre lycée, un établissement dynamique et accueillant, offre un cadre propice à l'épanouissement académique et personnel des élèves. Situé au cœur de la ville, il bénéficie d'infrastructures modernes et de ressources pédagogiques variées. Notre équipe éducative, composée de professeurs passionnés et dévoués, s'engage à accompagner chaque élève dans son parcours, en favorisant l'autonomie et la créativité.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="aa">Niveaux</h2>
+        <p>Nous accueillons des élèves de la seconde à la terminale.</p>
+        <p> * La 1ère année où l’enseignement général contribue un tronc commun<br>
+            * Les 3 années suivantes où les élèves sont orientés vers les filières qui leur correspondent le mieux.
+            A l’issue de ces 4 années, les élèves passent leur baccalauréat. L’obtention de ce dernier est obligatoire pour la poursuite à l’université. En cas d’échec, l’école fournira un certificat de fin d’études permettant l’inscription dans une école supérieure privée ou pour entrer directement dans la vie active.</p>
+    </section>
+
+    <section>
+        <h2 id="mm">Matières</h2>
+        <ul>
+            <li>Mathématiques</li>
+            <li>Physique</li>
+            <li>Chimie</li>
+            <li>Biologie</li>
+            <li>Histoire-Géographie</li>
+            <li>Langues Vivantes</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 id="entrer">Les Elites de notre Lycée</h2>
+        <table>
+            <tr>
+                <th>Nom de l'Élève</th>
+                <th>Note au Baccalauréat</th>
+            </tr>
+            <tr>
+                <td>Yessmine</td>
+                <td>18.89</td>
+            </tr>
+            <tr>
+                <td>Amine</td>
+                <td>16.65</td>
+            </tr>
+            <tr>
+                <td>Ismaail</td>
+                <td>17.25</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2 id="in">Infos</h2>
+        <p><strong>Localisation:</strong> Avenue Farhat Hached 2040 Radès, Ben Arous</p>
+        <p><strong>Tél :</strong> 02 879 789</p>
+        <p><strong>Fax :</strong> 09 899 586</p>
+        <strong>Heures d'ouverture de notre agence Web :</strong>
+        <p>Du lundi au jeudi de 8h à 18h</p>
+        <p>Le vendredi de 8h à 17h</p>
+        <strong><p>Suivez-nous sur :</p></strong>
+            <a href="https://www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAn1JREFUSEvFll1oz1EYxz+LRsu83WxygaSIXLmQJuXCXNokFyhyRUSyxM3ukJfalEutlLU0K5m4cSNlYrUScuO1vCTZGmmLOF+dv87/OOd3zv/nYk/tYr//c57P85znOc/z1DFFUjdFXGoFTwPWAouBBdbpd8BrYAj4mRtILngZcBxoA+ZGjH8BrgGngBcpB1LgBuA0sB9QtDnyAzgHdAKTsQNF4EXATWBlDi2g8xDYAigV/0gMvAK4B8wvCa0cE3SdrYEqUyFwsy0URZySj8Bd4CXwHZgObAWWOwefWviYaywE7gO2p4jGuPT2AaOe7kFzUxe8bxeBA0VgefosA6ooVkeezyFT+V2eDRWZnuD7ync/4svArgywrnPA05Nh/bUDitqXMyYdx0LgeuATMDsDrJt57uj129wWHdXbXhoCbwTuZEClIufGra4cnsg899dh96p3Az2ZBhqBr1Z3luNE6rje9XUpueAOQHnIkbLgw0C3Dz4KnI1QXwFLcjwCrgLbIrpinPfBqmZVdUhqAT8GVkXs7AB6fbDG3f3IgaqKLIhcg+SbmVAzIjprgGEfrHan0aZi8UXd6U9urJx0Jo+q+oT9rtwfiUBlQ73/lw/W/znvUXpliusKsLPilN+5dBUaZykpA1ben8TA+n7LTKfNCXKtYN1kVaXHxqKGwLwCeC3gD4Dme9UUiy0CG8xSd9usPTMj8Fyw2qpa8SPfTtHq0wIMAnMC8BywBs4ms/6MhJxPLXsLbSfS+uJKCnzDrDt7zHj8HEtXClx5cuuBvabBtAJNkef01qbnEvAg9SxywL4N9ew3zvahbiVngtvk/0Sccr7U72UiLgXyD/0GGLB0H1VMfAgAAAAASUVORK5CYII="/></a>
+            <a href="https://www.instagram.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII="/></a>
+            <a href="https://myaccount.google.com/?pli=1&nlr=1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbBJREFUSEvt1j9sTlEYx/FPg8RgKLEZTSxtF4nFZLNhIaQ2MTRNG2liwmKQaOPPICYJiQHd2sVo64BuXcTUsRWpjeA+cl45rnvf+77eW61wtnvPc37f8/w5zzlDtmgMbRHXf/Afi/y2CfUR3MZ+TGJxwBAcwzh2YQ6vO3q5x4fwCrsz2E1cwZc+N7ADNzCTrdvASLGRd/EvB09htgLwEmew2iP8AJ7iaIX9RBHNe2XwNVytEX+P81hogJ/AoyJde2vsrhf/g/OTx93AHZ07uIxPJeHI4S2ER93Gb4NDdBmnigi8TYSDeJ7y15SNgcAh/hGXEEUUOdvTREzzA4N75Pxi9neAo0rPlQqxm8df8TidgrJdpcdxlL6XemmMYhjz2NcQ43WcxIe8S2Vr+gZHJUdjCHi01aqxlKDRaGKzP9pjE7juHI/hTVq8M3W38nm9i2l8TnatgzubP42H6eMCnlWkp1WPc/3D6fJYqamLTQN3q7NNC3VTA+kLfBH3KxTz4moCdubrwMF4EEb5fRyvjic4XlJvAxxN5QXOFjfYWhncqzet2G2bx14r3vQi8u95/A2I1V0fhbK+uwAAAABJRU5ErkJggg=="/></a>
+            <a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/> </a>
+            <a href="https://www.tunisie-radio.com/mosaique-fm"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAftJREFUSEvt1kuoT1EUwOHvek28ZWCGlGfKyATlkceIkkfJACmZGIgwMBQpZahQYiBKYSIUkoGZyGOCDDxGRMwkzqr11+1e5+5zuNzU3XVqn3PWWr+91tp7rd1lgEbXAHH9LngWlmEibuFuWwfagifjJJb3AD3CWrxouoA24HF4hkk1xl9iHj43gbcBn8COgtEjONDf4CeYXTD6FHP6G/wVwwpGQ2ZEf4O/NzFIs5PSJseD4LrIN4piI6EkDIb6r4Q6yt4oHMOeJHzByMKRCr0xKRO6u7OEdr79VK/LcdTkmVWluljV540pfQ8LCuDbVadamjKXsnE8xtyeenXg09iGTxiP2FhrqiZwuQBehesYig/pfdT4nU3Bq3ElhTfhfM6PYm8NfB/if4zt2T5jvhI3moKH4Dmm4g3m420qr6u82YVF+X61apXh1bV8n4b7eUmIlEXT6HUU+zrHm3EujYWBFZUnrwuhnp7exYUhRqQnFtZrlArIBWxIrXeZq04KuhsLO7HQ45iQP36Z245SCRwhP4T93SgfK08eIHbr8Axl3DxGp8w3HMThvqJTAnd0F+JUtclmFEIdC9qKhwW5Zr0zjcQi1+cTl72x+f19bqyz1Tm/WQI2DXWdncWIYhFjCe40Bf634CnYkqs/U81f/SuP23Jan+M/BtQZ+AFNiFQfFD3UzAAAAABJRU5ErkJggg=="/></a>
+    </section>
+    <center>
+        <a href="index.html"><button>➔ &nbsp;Retour à L'accueil</button></a>
+    </center>
+    <br>
+    <br>
+    <footer>
+        <br>
+        &copy; Creation de site web LFR 09-11-2024
+        <br>
+        <br>
+    </footer>
+</body>
+</html>
