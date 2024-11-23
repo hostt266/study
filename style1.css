@@ -1,0 +1,15 @@
+.mod{
+    font-size: 37px;
+    background: linear-gradient(to left,
+    #ee82ee, indigo,
+    blue, #0acff2, yellow,
+    orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 3s linear infinite;
+    font-family: monospace;
+}
+@keyframes animated{
+    to {background-position-x: 161px;}
+}
