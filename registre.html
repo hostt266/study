@@ -27,12 +27,12 @@
             }
             label {
                 color: #333;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
                 display: block;
             }
-            input, textarea {
+            input{
                 width: 100%;
-                padding: 10px;
+                padding: 5px;
                 margin-bottom: 15px;
                 border: 1px solid #ddd;
                 border-radius: 5px;
@@ -59,20 +59,20 @@
                 <input type="text" placeholder="Saisir votre nom" id="nom" name="nom" required>
                 
                 <label for="nom">prenom :</label>
-                <input type="text"placeholder="Saisir votre prenom" id="prenom" name="nom" required>
+                <input type="text "placeholder="Saisir votre prenom" id="prenom" name="nom" required>
                 
                 <label for="nom">Date de naissance:</label>
                 <input type="date" id="date" name="nom" required>
 
                 <label for="email">Email :</label>
-                <input type="email"placeholder="Saisir votre mail" id="email" name="email" required>
+                <input type="email" placeholder="Saisir votre mail" id="email" name="email" required>
 
                 <label for="tel">Téléphone :</label>
                 <input type="tel" placeholder="Saisir votre tele" id="tel" name="tel"><br><br>
             
                 <center>
                     sex :
-                    <select name="sex" size="1" tabindex="2" onfocus="this.style.color='red'">
+                    <select name="sex" size="1" tabindex="2" onfocus="this.style.color='red'" required>
                         <option value="azeaze">Femme</option>
                         <option value="azeaze">Homme</option>
                     </select>
@@ -80,7 +80,7 @@
                 <br><br>
                 <center>
                     Pays :
-                    <select name="pays" size="1" tabindex="2" onfocus="this.style.color='red'">
+                    <select name="pays" size="1" tabindex="2" onfocus="this.style.color='red'" required>
                         <option value="">tunisie</option>
                         <option value="">algerie</option>
                         <option value="">morocco</option>
